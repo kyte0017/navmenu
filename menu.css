@@ -1,0 +1,127 @@
+/***************************************************
+Add your Google Fonts
+Update ALL the named colours to 
+create a monochromatic scheme
+Style the menus - one horizontally and one vertically
+Add the hover/active effects to your menu items
+***************************************************/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    line-height: 1.6;
+    /* ADD the Google sans-serif font to this font stack */
+    font-family:'Raleway', 'Palatino Linotype', 'Book Antiqua', 'Palatino', serif; 
+}
+html, body{
+    background-color: #0A6F7F;
+}
+h1{
+    font-size: 6.854rem;
+    /* ADD the Google serif font to this font stack */
+    font-family: 'Roboto Slab', 'helvetica', 'arial', sans-serif;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+h2{
+    font-size: 4.23rem;
+    /* ADD the Google serif font to this font stack */
+    font-family: 'Roboto Slab', 'helvetica', 'arial', sans-serif;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+nav li{
+    font-size: 2.618rem;
+}
+p{
+    font-size: 1.618rem;
+    padding: 1rem 2rem;
+}
+.wrapper{
+    max-width: 1400px; 
+    width: 80%;
+    margin: 0 auto;
+    background-color: #81EEFF;
+    color: #5B7D7F;
+}
+header{
+    border-bottom: 0.8rem solid #0A767F;
+    background-color: #10B2CC;
+    color: white;
+}
+.menu-h{
+    width: 100%;
+}
+
+/*MENU CODE*/
+    .menu-h li{
+        list-style: none;
+        float: left;
+        width: 20%;
+        /* style the list items to remove the bullets and line up horizontally and take up 20% of the width of the ul */
+        
+    }
+        .menu-h a,
+        .menu-h a:link,
+        .menu-h a:visited{
+            display: block;
+            padding: 8px;
+            text-align: center;
+            color: #0A6F7F;
+            background-color: #10B2CC;
+            list-style: none;
+            text-decoration: none;
+            /* style the anchors to fill the entire width of the li 
+            make sure there is padding around your text */
+        }
+        .menu-h a:hover,
+        .menu-h a:active{
+            
+            color: #5D7B7F;
+            background-color: #14DEFF;
+            border-bottom-color: blue;
+            /*bottom border isnt working...*/
+        
+            
+        }
+.menu-v{
+    width: 20%;
+    float:left;
+}
+    .menu-v li{
+        list-style: none;
+        /* style the list items to remove the bullets and line up vertically and take up 100% of the width of the ul */
+    }
+        .menu-v a,
+        .menu-v a:link,
+        .menu-v a:visited{
+            
+            display: block;
+            padding: 8px;
+            text-align: center;
+            color: #0A6F7F;
+            height: 100%;
+            overflow: auto;
+            background-color: #10B2CC;
+            text-decoration: none;
+            /* style the anchors to fill the entire width of the li */
+        }
+        .menu-v a:hover,
+        .menu-v a:active{
+            color:#14DEFF; 
+            background-color: #5D7B7F;
+            border-bottom-color: blue;
+            /*bottom border isnt working...*/
+        }
+
+/*END of MENU*/
+main{
+    width:80%;
+    float: right;
+}
+footer{
+    clear:both;
+}
